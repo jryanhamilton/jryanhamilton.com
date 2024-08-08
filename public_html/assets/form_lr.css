@@ -1,0 +1,58 @@
+
+/*		Lapengine - KBG - JCK - Version 2.3		*/
+/*		Updated - December 2 2009		*/
+
+/*		Form Styles		*/
+
+.form {}
+			
+	.form_header {}
+	.form_content {}
+	
+		.field { width: 98%; padding: 0px 0px 4px; }
+			
+			.lf_label, .rf_label { float: left; }
+			.lf_label { width: 40%; }
+			.rf_label { width: 50%; padding: 0px 10px 0px; }
+			
+			.general {}
+			#f_fname {}
+			#f_lname {}
+			#f_address {}
+			#f_address2 {}
+			#f_city {}
+			#f_state {}
+			#f_zip {}
+				#f_zip input { width: 35%; }
+			#f_phone {}
+				#f_phone input { width: 25%; }
+			#f_cell {}
+			#f_email {}
+			#f_promo {}
+			#f_quatity {}
+			#f_cardtype {}
+			#f_nameoncard {}
+			#f_cardnumber {}
+			#f_expiration {}
+			#f_cvv2 {}
+				#f_cvv2 input { width: 25%; }
+			#conversation_id {}
+			#f_submit { width: 100%; }
+			.checkbox { min-height: 22px; padding: 10px 0px; }
+				.checkbox input { margin: 0px; padding: 0px; }
+				.label_edit { position: relative; top: -3px; }
+			
+			/* Entry Input Width */
+			#f_name input, #f_email input, #f_phone input, #f_message textarea { width: 98%; background-color: #fbfbfb; border: 1px solid #aaaaaa; font-family: Georgia; line-height: 180%; }
+			
+			/* Entry Input Height */
+			#f_message textarea { height: 60px }
+			
+			/* Input Appearence */
+			
+			.f_align {}
+			.f_first {}
+			
+			.clear { clear: both; }
+	
+	.form_footer {}

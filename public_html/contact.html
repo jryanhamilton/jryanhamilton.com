@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title> James Ryan Hamilton </title>
+	
+	<link rel="stylesheet" type="text/css" href="assets/layout.css" />
+	<link rel="stylesheet" type="text/css" href="assets/form_lr.css" />
+	<script language="javascript" type="text/javascript" src="js/RegExpValidate.js"></script>
+	<script language="javascript" type="text/javascript">
+		function validate() {
+			txt=document.form1.email.value;
+			if (document.form1.name.value.length < 1) {
+				window.alert("Please Enter your name.");
+				document.form1.name.focus();
+				return false;
+			}
+			if (txt.indexOf("@")<3) {
+				window.alert("Please enter your email.");
+				document.form1.email.focus();
+				return false;
+			}
+			if (document.form1.phone.value.length < 1) {
+				window.alert("Please Enter your phone number.");
+				document.form1.phone.focus();
+				return false;
+			}
+			if (document.form1.message.value.length < 1) {
+				window.alert("Do you want to include a message?.");
+				document.form1.message.focus();
+				return false;
+			}	
+		return true;
+		}
+</script>
+
+</head>
+<body id="biography_body_contact">
+
+<div class="page_wrapper">
+	
+	<div class="bleed_top top_red"></div><!-- /top bleed -->
+
+	<div id="page">
+		
+		<div class="header">
+			<div class="nav_left float">
+				<ul>
+					<li class="about_home"><a href="index.html" class="link_left about_home_a d_block"><span>Home</span></a></li>
+					<li class="about_main"><a href="biography.html" class="link_left about_main_a d_block"><span>Biography</span></a></li>
+					<li class="about_contact"><a href="#" class="link_left about_contact_a d_block"><span>Contact Me</span></a></li>
+				</ul>
+			</div><!-- /left nav -->
+			
+			<div class="title about_title float">
+				
+			</div><!-- /title -->
+			
+			<div class="nav_right float">
+				<ul>
+					<li class="nav_right_about_active"><a href="biography.html"><span>Biography</span></a></li>
+					<li class="nav_right_gallery"><a href="gallery.html"><span>Gallery</span></a></li>
+					<li class="nav_right_projects"><a href="projects.html"><span>Projects</span></a></li>
+				</ul>
+			</div><!-- /right nav -->
+			
+			<div class="separator_top clear float"></div><!-- /seperator -->
+			<div class="nav_sub float">
+				<ul>
+					<li class="bio_about"><a href="about.html" id="aboutA"><span>About Me</span></a></li>
+	    			<li class="bio_contact"><a href="contact.html" id="contactA"><span>Contact Me</span></a></li>
+					<li class="bio_inspirations"><a href="inspirations.html" id="inspirationsA"><span>My Inspirations</span></a></li>
+				</ul>
+			</div><!-- /sub nav -->
+		</div><!-- /header -->
+		
+		<div class="section float">
+			<p class="descriptor bottom_30">You can use the form below to send me a direct message, or contact me yourself using one of the other methods listed.</p><!-- /descriptor -->
+			<div class="clear"></div>
+		
+			<div class="contact_form float">
+				<p class="gray form_text" >Note: All fields are required</p>
+				<form id="form1" name="form1" method="post" action="http://www.jryanhamilton.com/cgi-bin/cgiemail/message.txt" onSubmit="return validate();">
+					<input type="hidden" name="success" value="http://www.jryanhamilton.com/success.html"/>
+				
+					<div class="field">							
+						<div class="lf_label"><p class="f_align right">Name:</p></div>
+						<div id="f_name" class="rf_label f_align"><input type="text" name="name" /></div>
+						<div class="clear"></div>
+					</div>
+					<div class="field">							
+						<div class="lf_label"><p class="f_align right">Email:</p></div>
+						<div id="f_email" class="rf_label f_align"><input type="text" name="email" /></div>
+						<div class="clear"></div>
+					</div>
+					<div class="field">							
+						<div class="lf_label"><p class="f_align right">Phone:</p></div>
+						<div id="f_phone" class="rf_label f_align"><input type="text" name="phone" /></div>
+						<div class="clear"></div>
+					</div>
+					<div class="field">							
+						<div class="lf_label"><p class="f_align right">Message:</p></div>
+						<div id="f_message" class="rf_label f_align"><textarea name="message"></textarea></div>
+						<div class="clear"></div>
+					</div>
+					<div class="contact_submit">
+						<input type="submit" name="submit" id="submit" value="Submit" />
+					</div>
+				</form>
+			</div><!-- /contact_form -->
+			<div class="seperator_verticle float"></div>
+			<div class="contact_info float">
+				<div class="contact_header"><p class="left gray">My Email:</p></div>
+				<div class="contact_text"><p class="left">ryan@jryanhamilton.com</p></div>
+				
+				<div class="contact_header"><p class="left gray">My Phone:</p></div>
+				<div class="contact_text"><p class="left">(801) 369-7184</p></div>
+				
+				<div class="contact_header"><p class="left gray">Twitter:</p></div>
+				<div class="contact_text"><p class="left">jryanhamilton</p></div>
+				
+				<div class="contact_header"><p class="left gray">LinkedIn</p></div>
+				<div class="contact_text"><p class="left">ryan@jryanhamilton.com</p></div>
+			</div>
+		</div><!-- /section -->
+		
+	</div><!-- /page -->
+	
+</div><!-- /page_wrapper -->
+
+<div class="footer">
+	<div class="separator_bottom clear"></div><!-- /seperator -->
+	<div class="disclaimer"> &copy; 2014 J. Ryan Hamilton </div><!-- /disclaimer -->
+	<div class="bleed_bottom d_block clear"></div><!--/bottom bleed -->
+</div><!-- /footer -->
+	
+</body>
+</html>

@@ -1,0 +1,9 @@
+To: nyrmsoldier@gmail.com
+Subject: Room Registration
+
+Name [name]
+Phone Number [phone]
+Email [email]
+Room [room]
+Package [package]
+Other [other]

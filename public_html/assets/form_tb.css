@@ -1,0 +1,56 @@
+
+/*		Lapengine - KBG - JCK - Version 2.3		*/
+/*		Updated - December 2 2009		*/
+
+/*		Form Styles		*/
+
+.form {}
+			
+	.form_header {}
+	.form_content {}
+	
+		.field { width: 100%; }
+
+			.form_content p { padding: 10px 0px 0px 0px; }
+				.form_content .f_first { padding: 0px; }
+				.first { padding: 0px; }
+			.lf_label { width: 98%; }
+			.rf_label { width: 98%; }
+
+			.general {}
+			#f_fname {}
+			#f_lname {}
+			#f_address {}
+			#f_address2 {}
+			#f_city {}
+			#f_state {}
+			#f_zip {}
+				#f_zip input { width: 35%; }
+			#f_phone {}
+				#f_phone input { width: 25%; }
+			#f_cell {}
+			#f_email {}
+			#f_promo {}
+			#f_quatity {}
+			#f_cardtype {}
+			#f_nameoncard {}
+			#f_cardnumber {}
+			#f_expiration {}
+			#f_cvv2 {}
+				#f_cvv2 input { width: 25%; }
+			#conversation_id {}
+			#f_submit { width: 100%; }
+			.checkbox { min-height: 22px; padding: 10px 0px; }
+				.checkbox input { margin: 0px; padding: 0px; }
+				.label_edit { position: relative; top: -3px; }
+			
+			/* Entry Input Width */
+			#f_fname input, #f_lname input, #f_address input, #f_city input, #f_email input, #f_promo input, #f_nameoncard input, #f_cardnumber input { width: 98%; }
+			
+			/* Input Appearence */
+			
+			.f_align {}
+			
+			.clear { clear: both; }
+	
+	.form_footer {}
